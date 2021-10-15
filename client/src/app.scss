@@ -1,10 +1,6 @@
 /* Custom Theme */
-$color-brand: #cc9756;
-$color-brand-light: #d9b180;
-$color-brand-dark: #a37945;
-$color-border-base: #ab9560;
 
-@import "~taro-ui/dist/style/index.scss";
+@import "./theme.scss";
 
 .page {
   min-height: 100vh;
@@ -22,8 +18,27 @@ $color-border-base: #ab9560;
   padding: 24rpx;
 }
 
+.gap {
+  &-top {
+    margin-top: 24rpx;
+  }
+}
+
 .text {
   &-center {
     text-align: center;
+  }
+  &-warning {
+    color: $color-warning;
+  }
+}
+.panel {
+  margin: 24rpx;
+  border-radius: 12rpx;
+  margin-top: 0;
+  background-color: #fff;
+  overflow: hidden;
+  .at-list {
+    border-radius: 14rpx;
   }
 }

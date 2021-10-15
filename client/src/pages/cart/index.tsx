@@ -3,8 +3,6 @@ import Taro, { Config } from "@tarojs/taro";
 import { View, Text } from "@tarojs/components";
 import "./index.scss";
 
-import Empty from "../../components/empty/index";
-
 export default class Index extends Component {
   componentWillMount() {}
 
@@ -17,10 +15,6 @@ export default class Index extends Component {
   componentDidHide() {}
 
   render() {
-    return (
-      <View className="index">
-        <Empty />
-      </View>
-    );
+    return <View className="cart page"></View>;
   }
 }
