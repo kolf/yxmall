@@ -1,0 +1,29 @@
+/* Custom Theme */
+$color-brand: #cc9756;
+$color-brand-light: #d9b180;
+$color-brand-dark: #a37945;
+$color-border-base: #ab9560;
+
+@import "~taro-ui/dist/style/index.scss";
+
+.page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: rgb(249, 249, 249);
+}
+
+.bg {
+  &-light {
+    background-color: #fff;
+  }
+}
+
+.pad {
+  padding: 24rpx;
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+}
