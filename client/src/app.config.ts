@@ -3,7 +3,9 @@ export default {
     "pages/index/index",
     "pages/cart/index",
     "pages/user/index",
-    "pages/goods-details/index"
+    "pages/goods-details/index",
+    "pages/goods-categorys/index",
+    "pages/order-categorys/index",
   ],
   window: {
     backgroundTextStyle: "light",
@@ -14,7 +16,7 @@ export default {
   tabBar: {
     backgroundColor: "#fafafa",
     borderStyle: "white",
-    selectedColor: "#AB956D",
+    selectedColor: "#ee0a24",
     color: "#666",
     list: [
       {
@@ -23,12 +25,12 @@ export default {
         selectedIconPath: "./static/images/home@selected.png",
         text: "首页"
       },
-      {
-        pagePath: "pages/cart/index",
-        iconPath: "./static/images/cart.png",
-        selectedIconPath: "./static/images/cart@selected.png",
-        text: "购物车"
-      },
+      // {
+      //   pagePath: "pages/cart/index",
+      //   iconPath: "./static/images/cart.png",
+      //   selectedIconPath: "./static/images/cart@selected.png",
+      //   text: "购物车"
+      // },
       {
         pagePath: "pages/user/index",
         iconPath: "./static/images/my.png",

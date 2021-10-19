@@ -41,7 +41,8 @@ export { default as banner1 } from './banner1.jpg';
 export { default as banner2 } from './banner2.jpg';
 export { default as banner3 } from './banner3.jpg';
 
-export { default as goods } from './goods.png';
+export { default as goods } from './goods.jpg';
+export { default as goodsDetails } from './goods-details.jpg';
 
 
 

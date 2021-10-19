@@ -8,20 +8,19 @@ export default class Index extends React.PureComponent {
   render() {
     return (
       <View className="goods">
-        <View className="goods-image">
-          <Navigator url={`/pages/goods-details/index?id=111`}>
-            <Image src={goods} />
-          </Navigator>
-        </View>
+        <Navigator
+          className="goods-image"
+          url={`/pages/goods-details/index?id=111`}
+        >
+          <Image style="height:320rpx;width:320rpx" src={goods} />
+        </Navigator>
 
         <View className="goods-info">
-          <View className="goods-title">
-            不弯腰不脏手 洗脱一体免手洗懒人拖把
-          </View>
+          <View className="goods-title">小米立式无线充电器 通用快充20W</View>
 
           <View className="goods-price">
-            <Text className="goods-price-name">优惠价格</Text>
-            <Text className="goods-price-number">68.00</Text>
+            <Text className="goods-price-name">优惠价</Text>
+            <Text className="goods-price-number">¥68.00</Text>
           </View>
           <View className="goods-buttons">
             <van-button size="small" type="danger" block>

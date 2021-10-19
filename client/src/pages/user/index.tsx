@@ -23,22 +23,36 @@ export default class Index extends Component {
             round
             width="200rpx"
             height="200rpx"
-            src="https://img.yzcdn.cn/vant/cat.jpeg"
+            src="http://ddbuy.7-orange.cn/img/grey.fb4a97dd.jpg"
           />
           <View className="text-center" style="padding-top:12rpx">
-            <Text style="paddingTop:12rpx">微信昵称</Text>
+            <Text style="padding-top:12rpx">微信昵称</Text>
           </View>
         </View>
-
-        <van-cell-group inset>
-          <van-cell title="单元格" is-link />
-          <van-cell title="单元格" is-link />
+        <van-cell-group border={false} inset>
+          <van-cell icon="completed" title="我的订单" is-link />
+          <View className="bg-light">
+            <van-grid clickable columnNum={4} border={false}>
+              <van-grid-item
+                link-type="navigateTo"
+                url="/pages/order-categorys/index"
+                icon="https://img20.360buyimg.com/jdphoto/s72x72_jfs/t15151/308/1012305375/2300/536ee6ef/5a411466N040a074b.png"
+                text="待使用"
+              />
+              <van-grid-item
+                link-type="navigateTo"
+                url="/pages/order-categorys/index"
+                icon="https://img10.360buyimg.com/jdphoto/s72x72_jfs/t5872/209/5240187906/2872/8fa98cd/595c3b2aN4155b931.png"
+                text="已完成"
+              />
+            </van-grid>
+          </View>
         </van-cell-group>
 
         <View className="gap-top">
-          <van-cell-group inset>
-            <van-cell title="单元格" is-link />
-            <van-cell title="单元格" is-link />
+          <van-cell-group inset border={false}>
+            <van-cell icon="chat-o" title="联系客服" is-link />
+            <van-cell icon="shop-o" title="联系我们" is-link />
           </van-cell-group>
         </View>
       </View>

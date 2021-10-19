@@ -1,0 +1,24 @@
+.goods-details {
+  padding-bottom: 24 * 4rpx;
+  &__banner {
+    height: 370rpx;
+    &-item {
+      .img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+      }
+    }
+  }
+  &__title {
+    background-color: #fff;
+    &-desc {
+      font-size: 24rpx;
+      color: #ccc;
+      padding: 12rpx 0;
+    }
+    &-price {
+      color: #f00;
+    }
+  }
+}

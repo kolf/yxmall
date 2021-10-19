@@ -1,7 +1,8 @@
 import * as React from "react";
 import Taro from "@tarojs/taro";
 import { View, Text, Swiper, SwiperItem, Image } from "@tarojs/components";
-import { banner1, banner2, banner3 } from "../../static/images";
+import { goods, goodsDetails } from "../../static/images";
+import "./style.scss";
 
 export default class Index extends React.Component {
   state = {};
@@ -10,28 +11,48 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      <View className="goods-details">
-        <View className="at-article">
-          <View className="at-article__h1">这是一级标题这是一级标题</View>
-          <View className="at-article__info">2017-05-07 这是作者</View>
-          <View className="at-article__content">
-            <View className="at-article__section">
-              <View className="at-article__h2">这是二级标题</View>
-              <View className="at-article__h3">这是三级标题</View>
-              <View className="at-article__p">
-                这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本落。这是文本段落。1234567890123456789012345678901234567890
-                ABCDEFGHIJKLMNOPQRSTUVWXYZ
-              </View>
-              <View className="at-article__p">
-                这是文本段落。这是文本段落。
-              </View>
-              <Image
-                className="at-article__img"
-                src="https://jdc.jd.com/img/400x400"
-                mode="widthFix"
-              />
+      <View className="goods-details page">
+        <View className="goods-details__header">
+          <Image src={goods} style="width:100vw;height:100vw" />
+          <View className="goods-details__title pad">
+            <View className="goods-details__title-name">
+              小米立式无线充电器 通用快充20W
+            </View>
+            <View className="goods-details__title-desc">
+              立式结构，迅速感应边充边玩双线圈设计，横竖摆放都能充
+            </View>
+            <View className="goods-details__title-price">
+              <Text>优惠价 ¥68</Text>
             </View>
           </View>
+        </View>
+        <View className="gap-top">
+          <van-cell-group>
+            <van-cell
+              icon="manager-o"
+              title="商家名称"
+              value="小米之家旗舰店"
+              is-link
+            />
+            <van-cell
+              icon="service-o"
+              title="商家电话"
+              value="18611123456"
+              is-link
+            />
+            <van-cell
+              icon="guide-o"
+              title="商家地址"
+              value="北京市海淀区上地十街10号百度大厦"
+              is-link
+            />
+          </van-cell-group>
+        </View>
+        <View className="text-center pad">
+          <Text>商品详情</Text>
+        </View>
+        <View className="goods-details__body">
+          <Image style="width:100vw;height:1280rpx" src={goodsDetails}></Image>
         </View>
         <van-goods-action>
           <van-goods-action-icon icon="chat-o" text="客服" />
