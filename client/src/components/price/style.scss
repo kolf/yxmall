@@ -1,0 +1,14 @@
+.price {
+  &__currentValue {
+    font-size: xx-large;
+    font-weight: 700;
+    color: #f00;
+    margin-right: 12rpx;
+    position: relative;
+    top: 2rpx;
+  }
+  &__value {
+    color: #999;
+    text-decoration: line-through;
+  }
+}

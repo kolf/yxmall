@@ -14,6 +14,7 @@ export default class Index extends React.Component {
     return (
       <View className="goods-categorys page">
         <van-tabs active={this.state.active}>
+          <van-tab title="全部" />
           <van-tab title="待使用" />
           <van-tab title="已完成" />
         </van-tabs>

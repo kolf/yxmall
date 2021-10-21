@@ -6,6 +6,8 @@ export default {
     "pages/goods-details/index",
     "pages/goods-categorys/index",
     "pages/order-categorys/index",
+    "pages/shop/index",
+    "pages/shopping/index",
   ],
   window: {
     backgroundTextStyle: "light",

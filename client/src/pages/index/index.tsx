@@ -8,7 +8,7 @@ import {
   SwiperItem,
   Image
 } from "@tarojs/components";
-import GoodsItem from "../../components/goodsItem";
+import GoodsItem from "../../components/goods-item/index";
 import { banner1, banner2, banner3 } from "../../static/images";
 import "./style.scss";
 
@@ -89,8 +89,8 @@ export default class Index extends React.PureComponent {
           />
         </van-grid>
 
-        <View className="text-center pad">
-          <Text>限时秒杀</Text>
+        <View>
+          <van-divider contentPosition="center">限时秒杀</van-divider>
         </View>
         <View>
           <GoodsItem />

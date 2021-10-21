@@ -30,9 +30,15 @@ export default class Index extends Component {
           </View>
         </View>
         <van-cell-group border={false} inset>
-          <van-cell icon="completed" title="我的订单" is-link />
+          <van-cell icon="completed" title="我的订单" isLink />
           <View className="bg-light">
             <van-grid clickable columnNum={4} border={false}>
+              <van-grid-item
+                link-type="navigateTo"
+                url="/pages/order-categorys/index"
+                icon="https://img20.360buyimg.com/jdphoto/s72x72_jfs/t15151/308/1012305375/2300/536ee6ef/5a411466N040a074b.png"
+                text="全部订单"
+              />
               <van-grid-item
                 link-type="navigateTo"
                 url="/pages/order-categorys/index"
@@ -51,8 +57,18 @@ export default class Index extends Component {
 
         <View className="gap-top">
           <van-cell-group inset border={false}>
-            <van-cell icon="chat-o" title="联系客服" is-link />
-            <van-cell icon="shop-o" title="联系我们" is-link />
+            <van-cell
+              icon="chat-o"
+              openType="contact"
+              title="在线客服"
+              isLink
+            />
+            <van-cell
+              icon="shop-o"
+              title="联系我们"
+              value="400-800400"
+              isLink
+            />
           </van-cell-group>
         </View>
       </View>

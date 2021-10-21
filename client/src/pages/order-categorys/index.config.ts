@@ -1,5 +1,5 @@
 export default {
-  navigationBarTitleText: "商品列表",
+  navigationBarTitleText: "我的订单",
   usingComponents: {
     "van-tab": "@/vant/tab/index",
     "van-tabs": "@/vant/tabs/index",
